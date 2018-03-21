@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>AiFocus-UI</title>
+  </head>
+  <body style="margin: 0;">
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+  function resize() {
+    window.remFontSize = document.documentElement.clientWidth * 12 / 375;
+    document.documentElement.style.fontSize = document.documentElement.clientWidth * 12 / 375 + "px";
+  }
+  var b = null;
+  window.addEventListener("resize", function() {
+    clearTimeout(b),
+      b = setTimeout(resize, 300);
+  }, !1);
+  resize();
+
+  </script>
+</html>
